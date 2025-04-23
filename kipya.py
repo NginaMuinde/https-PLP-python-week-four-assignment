@@ -144,11 +144,11 @@ def read_and_write_file():
 
         #If any error occurs (missing file, bad input, etc.), the software tells the user of the error.
     except FileNotFoundError:
-        print(f"❌ Error: The file '{source_file}' was not found. Please check the filename and try again.")
+        print(f"Error: The file '{source_file}' was not found. Please check the filename and try again.")
     except IOError:
-        print(f"❌ Error: Unable to read or write files. Check file permissions or disk space.")
+        print(f"Error: Unable to read or write files. Check file permissions or disk space.")
     except Exception as e:
-        print(f"❌ An unexpected error occurred: {str(e)}")
+        print(f"An unexpected error occurred: {str(e)}")
 
 # Run
 read_and_write_file()
